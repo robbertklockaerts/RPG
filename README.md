@@ -5,6 +5,7 @@ Process To Work-on JavaScript Skills.
 
 Orcs, Elves, Humans &amp; Vampires battling for their lives!
 
+GameLink : https://robbertklockaerts.github.io/RPG/rpg.html
 
 
 # Challenge: [RPG Challenge](https://github.com/becodeorg/BXL-Swartz-4-27/tree/master/2.The-Hill/1.Javascript/rpg-project)
