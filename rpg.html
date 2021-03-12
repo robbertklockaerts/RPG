@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Corcky Orc's battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container"></main>
+ 
+    
+          <!--1st page-->
+
+        <section id="infopage">
+            
+            <header id="header1">
+                <h1>The Corcky Orc's battle</h1>
+        
+            </header>
+
+         <section id='player1'>
+            <h2>Player 1</h2>
+            <input type="text" id="myText" name="fname" placeholder="Enter Your Name">
+            <button id="sub1" onclick="javascript:my()">Submit</button><br>
+            <br>
+            
+            <div id="select-race">
+                <label>Select Race</label>
+                <select id = "heroracelist" required>
+                 
+                    <option value="Human">Humans (20% less damage taken)</option>
+                    <option value="Orc">Orcs (40% more max health)</option>
+                    <option value="Elf">Elves (30% chance to deflect the attack back)</option>
+                    <option value="Vampire">Vampires (10% lifesteal at vampire's turn)</option>
+                </select><br>
+                <br>
+            </div>
+            <div id="select-item">
+                <label>Select Power</label>
+                <select id= "heropowerlist">
+                  
+                    <option value="Boots">Boots (30% chance to dodge an attack)</option>
+                    <option value="Staff">Staff (20% increase in healing)</option>
+                    <option value="Sword">Sword (30% more damage)</option>
+                    <option value="Bow">Bow (30% chance to attack twice)</option>
+                </select>
+            </div>
+          </section>
+
+         <section id='player2'>
+            <h2>Player 2</h2>
+            <input type="text" id="myText2" name="fname" placeholder="Enter Your Name">
+            <button id="sub2" onclick="javascript:my2()">Submit</button><br>
+            <br>
+            <div id="select-race">
+                <label>Select Race</label>
+                <select id = "enemyracelist">
+              
+                    <option value="Human">Humans (20% less damage taken)</option>
+                    <option value="Orc">Orcs (40% more max health)</option>
+                    <option value="Elf">Elves (30% chance to deflect the attack back)</option>
+                    <option value="Vampire">Vampires (10% lifesteal at vampire's turn)</option>
+                </select><br>
+                <br>
+            </div>
+            <div id="select-item">
+                <label>Select Power</label>
+                <select id= "enemypowerlist">
+                   
+                    <option value="Boots">Boots (30% chance to dodge an attack)</option>
+                    <option value="Staff">Staff (20% increase in healing)</option>
+                    <option value="Sword">Sword (30% more damage)</option>
+                    <option value="Bow">Bow (30% chance to attack twice)</option>
+                </select>
+            </div>
+          </section>
+         <button type="button" id="GameStart">Let the games begin</button>
+        </section><br>
+    </br>
+        <br>
+    </br>
+       
+
+
+ <!--2th page-->
+
+
+    
+
+    <section id="battlepage">  
+
+              <header id=header2>
+       
+                   <h1>The Corcky Orc's battle</h1>
+             </header>
+
+        <section id="battleCharacters">
+            <div id="p1Character">
+                <section id="p1Name">
+                    <h2 id="p1NameDisplay">Player1</h2>
+                </section>
+             
+                <section id="p1Race">
+                    <p id="p1RaceDisplay">Your race</p>
+                </section>
+                <section id="p1Item">
+                    <p id="p1ItemDisplay">Your item</p>
+                </section>
+                <section id="P1HP">
+                    <label id="p1HPDisplay" for="p1HP">HealthPoints</label>
+                    <!--    <progress id="p1HP" value="0" max="100"></progress>  -->
+                    <p id="p1HP">100</p>
+                </section>
+           
+                
+                <section id="p1Buttons">
+                    <button id="p1Attack" style="width: 150px" type="button">Attack</button>
+                    <button id="p1Heal" style="width: 150px" type="button">Heal</button>
+                    <button id="p1Yield" style="width:150px" type="button">Yield</button>
+                </section>
+
+                
+            </div>
+            <div id="p2Character">
+                <section id="p2Name">
+                    <h2 id="p2NameDisplay">Player2</h2>
+                </section>
+               
+                <section id="p2Race">
+                    <p id="p2RaceDisplay">Race:</p>
+                </section>
+                <section id="p2Item">
+                    <p id="p2ItemDisplay">Item:</p>
+                </section>
+                <section id="P2HP">
+                    <label id="p2HPDisplay" for="p2HP">HealthPoints</label>
+               <!--     <progress id="p2HP" value="0" max="100"></progress> -->
+                    <p id="p2HP">100</p>
+                </section>
+              
+                <section id="p2Buttons">
+                    <button id="p2Attack" style="width:150px" type="button">Attack</button>
+                    <button id="p2Heal" style="width:150px" type="button">Heal</button>
+                    <button id="p2Yield" style="width:150px" type="button">Yield</button>
+                </section>
+            </div>
+        </section>
+        <section id="log">
+            <h2>Battle Moves</h2>
+            <p id="moves">Player 1:<br> 
+            player 2: </p>
+            <p id="moves2"></p>
+
+        </section>
+        <section id="returnButton">
+            <button id="return" onClick="refreshPage()" style="width:150px" type="button">Return</button>
+        </section>
+  
+    </section>
+</main>
+<script type="text/javascript" src="character.js"></script>
+<script type="text/javascript" src="gamelogic.js"></script>
+</body>
+
+</html>
