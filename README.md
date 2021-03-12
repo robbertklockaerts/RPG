@@ -3,7 +3,7 @@
 Process To Work-on JavaScript Skills.
 
 
-Orcs, Elf, Humans &amp; Vampires battling for their lives!
+Orcs, Elves, Humans &amp; Vampires battling for their lives!
 
 
 
